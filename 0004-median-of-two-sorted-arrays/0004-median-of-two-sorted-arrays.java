@@ -10,10 +10,7 @@ class Solution {
             }
         }
         Arrays.sort(mergedArr);
-        int totalLen=mergedArr.length;
-        double median;
-        if(totalLen%2==0) median=(mergedArr[totalLen/2]+mergedArr[totalLen/2-1])/2.0;
-        else median=(double)mergedArr[totalLen/2];
-        return median;
+        if(mergedArr.length%2==0) return (mergedArr[mergedArr.length/2]+mergedArr[mergedArr.length/2-1])/2.0;
+        return (double)mergedArr[mergedArr.length/2];
     }
 }
